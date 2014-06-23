@@ -9,16 +9,11 @@ public class ListActivities {
 	 * @param shoppingList An ArrayList that holds all the List Items
 	 */
 	public static void displayList(ArrayList<String> shoppingList) {
-		for (String listItem : shoppingList) {
-			if (listItem != null) {
-				System.out.println("Here's the Shopping List: ");
+		System.out.println("Here's the Shopping List: ");
+		for (String listItem : shoppingList)
+			if (listItem != null)
 				System.out.println(listItem);
-				
-				System.out.println();
-				return;
-			}
-		}
-		System.out.println("The Shopping List is empty!\n");
+		System.out.println();
 	}
 	
 	/**

@@ -26,7 +26,7 @@ public class ShoppingList {
 		ArrayList<String> shoppingList = new ArrayList<String>();
 		
 		/**
-		 * Scanner element intialized to take input from the user
+		 * Scanner element initialized to take input from the user
 		 */
 		Scanner input = new Scanner(System.in);
 		
@@ -76,7 +76,9 @@ public class ShoppingList {
 		 * Closing the Scanner element 'input' to prevent resource leakage
 		 * Read: http://stackoverflow.com/questions/12519335/resource-leak-in-is-never-closed
 		 */
-		input.close();
+		if (input != null) {
+			input.close();
+		}
 		
 	}
 }
