@@ -1,3 +1,5 @@
+![Shopping List](http://i.imgur.com/Fx06L0N.jpg)
+
 ## Shopping List v1.3
 
 > Hey there! My name is [Amruth A. Pillai](https://facebook.com/AmruthPillai) and I'm learning Java.
