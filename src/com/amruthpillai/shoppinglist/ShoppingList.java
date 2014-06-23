@@ -1,7 +1,6 @@
 package com.amruthpillai.shoppinglist;
 
 // Imports
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.amruthpillai.shoppinglist.activities.ListActivities;
@@ -20,10 +19,10 @@ public class ShoppingList {
 		 */
 		boolean looper = true;
 		
-		/**
-		 * ArrayList element which takes in only <String> holding all our Shopping List Items
-		 */
-		ArrayList<String> shoppingList = new ArrayList<String>();
+//		/**
+//		 * ArrayList element which takes in only <String> holding all our Shopping List Items
+//		 */
+//		ArrayList<String> shoppingList = new ArrayList<String>();
 		
 		/**
 		 * Scanner element initialized to take input from the user
@@ -43,21 +42,21 @@ public class ShoppingList {
 				/**
 				 * Add an Item to the Shopping List
 				 */
-				ListActivities.addItem(shoppingList, input);
+				ListActivities.addItem(input);
 				break;
 
 			case 2:
 				/**
 				 * Clear the Shopping List
 				 */
-				ListActivities.clearList(shoppingList);
+				ListActivities.clearList();
 				break;
 
 			case 3:
 				/**
 				 * Display the Shopping List
 				 */
-				ListActivities.displayList(shoppingList);
+				ListActivities.displayList();
 				break;
 				
 			case 4:
@@ -76,9 +75,8 @@ public class ShoppingList {
 		 * Closing the Scanner element 'input' to prevent resource leakage
 		 * Read: http://stackoverflow.com/questions/12519335/resource-leak-in-is-never-closed
 		 */
-		if (input != null) {
+		if (input != null)
 			input.close();
-		}
 		
 	}
 }
