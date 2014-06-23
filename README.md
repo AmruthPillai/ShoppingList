@@ -1,6 +1,10 @@
 ## Shopping List v1.3
 
+> Hey there! My name is [Amruth A. Pillai](https://facebook.com/AmruthPillai) and I'm learning Java.
+
 > This application is the playground for my Java Programming learning curve. My goal is to create a full-fledged working system of a simple shopping list or reminder list purely in Java using inbuilt and external libraries, like the Apache Commons IO Library.
+
+> I care a great deal about indentation and commenting my code, so be on the look out for the way I organize my code and the documentation.
 
 > I would like to thank [@aldefy](https://github.com/aldefy). for introducing me to this programming language and helping me with those teeny-tiny bugs from time to time! :)
 
