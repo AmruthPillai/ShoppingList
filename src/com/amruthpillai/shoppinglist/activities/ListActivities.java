@@ -1,5 +1,6 @@
 package com.amruthpillai.shoppinglist.activities;
 
+// Imports
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -35,6 +36,15 @@ public class ListActivities {
 	}
 	
 	/**
+	 * Remove an Item from the Shopping List
+	 * 
+	 * @param shoppingList An ArrayList that holds all the List Items
+	 */
+	public static void removeItem(Scanner input) {
+		RemoveItem.removeLineFromFile(shoppingListFile, input);
+	}
+	
+	/**
 	 * Add an Item to the Shopping List
 	 * 
 	 * @param shoppingList An ArrayList that holds all the List Items
@@ -45,7 +55,8 @@ public class ListActivities {
 		String newItem = input.nextLine();
 		
 		try {
-			FileUtils.write(shoppingListFile, newItem);
+			FileUtils.write(shoppingListFile, newItem, true);
+			FileUtils.write(shoppingListFile, "\n", true);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
