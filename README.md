@@ -1,6 +1,4 @@
-![Shopping List](http://i.imgur.com/Fx06L0N.jpg)
-
-## Shopping List v1.3
+## Shopping List v1.4
 
 > Hey there! My name is [Amruth A. Pillai](https://facebook.com/AmruthPillai) and I'm learning Java.
 
@@ -10,24 +8,29 @@
 
 > I would like to thank [@aldefy](https://github.com/aldefy). for introducing me to this programming language and helping me with those teeny-tiny bugs from time to time! :)
 
-### Change-Log
+## Change-Log
+
+### v1.4 - Added: Option to Remove Individual Item
+
+	Dtd: 23rd June 2014
+	Desc: Added the functionality to remove a particular item from the Shopping List by typing the Item Name.
 
 ### v1.3 - Updated: File Management
 
 	Dtd: 23nd June 2014
-	Description: Updated the functionality from storing items in an ArrayList to storing items in a portable text file called 'shoppinglist.txt'.
+	Desc: Updated the functionality from storing items in an ArrayList to storing items in a portable text file called 'shoppinglist.txt'.
 
 ### v1.2 - Added: Clear Shopping List
 
 	Dtd: 22nd June 2014
-	Description: Added the functionality to delete/clear the elements of the ArrayList.
+	Desc: Added the functionality to delete/clear the elements of the ArrayList.
 
 ### v1.1 - Created First Application
 
 	Dtd: 22nd June 2014
-	Description: Created an application that stores items in an ArrayList and displays the same.
+	Desc: Created an application that stores items in an ArrayList and displays the same.
 
 ### v1.0 - First Commit
 
 	Dtd: 22nd June 2014
-	Description: Welcomed myself to the world of Java Programming.
+	Desc: Welcomed myself to the world of Java Programming.
