@@ -1,4 +1,4 @@
-## Shopping List v1.4
+## Shopping List
 
 > Hey there! My name is [Amruth A. Pillai](https://facebook.com/AmruthPillai) and I'm learning Java.
 
@@ -10,6 +10,11 @@
 
 ## Change-Log
 
+### v1.5 - Updated: Created Object for ListActivities
+
+	Dtd: 24th June 2014
+	Desc: Created an object reference for the ListActivities class and replaced the while loop with a do while loop for more optimization.
+
 ### v1.4 - Added: Option to Remove Individual Item
 
 	Dtd: 23rd June 2014
@@ -17,7 +22,7 @@
 
 ### v1.3 - Updated: File Management
 
-	Dtd: 23nd June 2014
+	Dtd: 23rd June 2014
 	Desc: Updated the functionality from storing items in an ArrayList to storing items in a portable text file called 'shoppinglist.txt'.
 
 ### v1.2 - Added: Clear Shopping List
