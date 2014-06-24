@@ -54,7 +54,8 @@ public class ShoppingList {
 				break;
 
 			case 5:
-				looper = false;
+				// Terminate the application by inverting the looper boolean
+				looper = !looper;
 				System.out.println("Goodbye!");
 				break;
 
