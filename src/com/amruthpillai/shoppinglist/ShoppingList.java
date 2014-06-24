@@ -9,7 +9,7 @@ import com.amruthpillai.shoppinglist.activities.ListActivities;
  * Simple Shopping List in Java
  * 
  * @author Amruth Pillai
- * @version 1.0
+ * @version 1.6
  */
 public class ShoppingList {
 	public static void main(String[] args) {

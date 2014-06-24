@@ -10,7 +10,7 @@ import org.apache.commons.io.FileUtils;
 
 public class ListActivities {
 
-	static File shoppingListFile = new File("shoppinglist.txt");
+	File shoppingListFile = new File("shoppinglist.txt");
 
 	/**
 	 * Display the Shopping List
@@ -23,7 +23,15 @@ public class ListActivities {
 		List<String> shoppingListArray = null;
 
 		try {
-			shoppingListArray = FileUtils.readLines(shoppingListFile);
+			// Check if Shopping List is already created, otherwise show
+			// instruction.
+			if (shoppingListFile.exists()) {
+				shoppingListArray = FileUtils.readLines(shoppingListFile);
+			} else {
+				System.out
+						.println("The file does not exist, please create a new Shopping List!\n");
+				return;
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -43,7 +51,14 @@ public class ListActivities {
 	 *            An ArrayList that holds all the List Items
 	 */
 	public void removeItem(Scanner input) {
-		RemoveItem.removeLineFromFile(shoppingListFile, input);
+		// Check if Shopping List is already created, otherwise show
+		// instruction.
+		if (shoppingListFile.exists()) {
+			RemoveItem.removeLineFromFile(shoppingListFile, input);
+		} else {
+			System.out
+					.println("The file does not exist, please create a new Shopping List!\n");
+		}
 	}
 
 	/**
@@ -59,8 +74,9 @@ public class ListActivities {
 		String newItem = input.nextLine();
 
 		try {
-			FileUtils.write(shoppingListFile, newItem, true);
-			FileUtils.write(shoppingListFile, "\n", true);
+			// Even if Shopping List does not exist, writing to shoppingListFile
+			// will create a new file.
+			FileUtils.write(shoppingListFile, newItem + "\n", true);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -74,8 +90,16 @@ public class ListActivities {
 	 */
 	public void clearList() {
 		try {
-			FileUtils.forceDelete(shoppingListFile);
-			System.out.println("The Shopping List has been cleared!");
+			// Check if Shopping List is already created, otherwise show
+			// instruction.
+			if (shoppingListFile.exists()) {
+				// Force Delete the shoppingListFile to clear all items.
+				FileUtils.forceDelete(shoppingListFile);
+				System.out.println("The Shopping List has been cleared!");
+			} else {
+				System.out
+						.println("The file does not exist, please create a new Shopping List!\n");
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
