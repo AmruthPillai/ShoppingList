@@ -10,6 +10,12 @@
 
 ## Change-Log
 
+### v1.6 - Added: Error Handling Exceptions
+
+	Dtd: 24th June 2014
+	Desc: Added an instruction whenever user tries to delete or display a list that does not exist.
+
+
 ### v1.5 - Updated: Created Object for ListActivities
 
 	Dtd: 24th June 2014
