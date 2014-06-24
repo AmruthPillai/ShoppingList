@@ -6,7 +6,9 @@ import java.util.Scanner;
 import com.amruthpillai.shoppinglist.activities.ListActivities;
 
 /**
- * Simple Shopping List in Java
+ * Shopping List
+ * 
+ * A Simple Shopping List developed in Java for Learning Purposes
  * 
  * @author Amruth Pillai
  * @version 1.6
@@ -28,6 +30,7 @@ public class ShoppingList {
 			System.out.print("1) Add a new item\n" + "2) Remove an item\n"
 					+ "3) Remove all items\n" + "4) Display the list\n"
 					+ "5) Terminate the app\n\n" + "Enter an option: ");
+			// Get option input from user
 			int option = Integer.parseInt(input.nextLine());
 
 			// Switch for Menu
@@ -60,6 +63,7 @@ public class ShoppingList {
 				break;
 
 			default:
+				// Default error statement
 				System.out
 						.println("This was an invalid option, please try again\n!");
 				break;
