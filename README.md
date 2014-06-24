@@ -3,10 +3,6 @@
 Hey there!
 My name is [Amruth A. Pillai](https://facebook.com/AmruthPillai) and you're awesome.
 
-
-***
-
-
 This application is the playground for my Java Programming learning curve. My goal is to create a full-fledged working system of a simple shopping list or reminder list purely in Java using inbuilt and external libraries, like the Apache Commons IO Library.
 
 I care a great deal about indentation and commenting my code, so be on the look out for the way I organize my code and the documentation.
